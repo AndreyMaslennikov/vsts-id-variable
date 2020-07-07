@@ -10,11 +10,10 @@ pool:
   vmImage: 'windows-2019'
 
 steps:
-- script: npm i -g appcenter-cli
-  displayName: Install appcenter CLI tool
 
 - script: |
-    appcenter test run uitest --app "v-andrem-microsoft.com/vsts-id-variable-test" --devices 766d134b --app-path D:/a/1/s/aWest3Dint28142.apk --test-series "master" --locale "en_US" --build-dir D:/a/1/s/Debug --vsts-id-variable TEST_RUN_ID --token a4a8419a64cf7cf5c5f0f6e72b3477830ca0bf94
+    echo on
+    echo "##vso[task.setvariable variable=TEST_RUN_ID]947b95de-2cc3-40d1-b27b-fc2002dbdb3f"
   displayName: 'Run App Center tests'
 
 - script: set T
