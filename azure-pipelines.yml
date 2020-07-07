@@ -13,7 +13,7 @@ steps:
 
 - script: |
     echo on
-    echo "##vso[task.setvariable variable=TEST_RUN_ID]947b95de-2cc3-40d1-b27b-fc2002dbdb3f"
+    echo ##vso[task.setvariable variable=TEST_RUN_ID]947b95de-2cc3-40d1-b27b-fc2002dbdb3f
   displayName: 'Run App Center tests'
 
 - script: set T
