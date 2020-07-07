@@ -10,5 +10,5 @@ pool:
   vmImage: 'windows-2019'
 
 steps:
-- script: echo Hello, world!
+- script: echo %Agent.BuildDirectory%
   displayName: 'Run a one-line script'
